@@ -1,0 +1,27 @@
+{
+  "name": "israelitactical",
+  "version": "0.0.1",
+  "description": "Business Website for Israeli Tactical School",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "cd israeliTacticalUi & ng build & cd ../ & node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresmonc/israelitactical.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresmonc/israelitactical/issues"
+  },
+  "homepage": "https://github.com/andresmonc/israelitactical#readme"
+}
