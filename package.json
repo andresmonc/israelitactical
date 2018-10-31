@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "cd israeliTacticalUi & npm install & ng build --prod & cd ../ & node index.js",
+    "start": "npm install -g @angular/cli & cd israeliTacticalUi & npm install & ng build --prod & cd ../ & node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
