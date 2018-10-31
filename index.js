@@ -16,7 +16,7 @@ app.use(bodyParser.json())
  We are telling express server dist folder is the place to look for the static files*/
 app.use(express.static(path.join(__dirname, 'dist')));
 app.get('*', (req, res, next) => {
-    res.sendFile(path.join(__dirname, 'dist/israeliTacticalUi/index.html'));
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 })
 
 //Starts the server to host static files
