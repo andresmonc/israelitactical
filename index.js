@@ -21,5 +21,5 @@ app.get('*', (req, res, next) => {
 
 //Starts the server to host static files
 app.listen(port, () => {
-    console.log(`Express Server listening on port:${port}`)
+    console.log(`Express Server listening on port:${port}`) 
 });
