@@ -8,8 +8,8 @@ const nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'user',
-        pass: 'pass'
+        user: process.env.email_user,
+        pass: process.env.email_password
     }
 });
 
@@ -19,7 +19,7 @@ let transporter = nodemailer.createTransport({
 router.get('/', function (req, res) {
 
     const mailOptions = {
-        from: 'it@gmail.com', // sender address
+        from: process.env.email_user, // sender address
         to: req.query.email, // list of receivers
         subject: `Web Inquiry - ${req.query.email} - ${req.query.name}`, // Subject line
         html: req.query.message// plain text body
