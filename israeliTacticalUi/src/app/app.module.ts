@@ -9,6 +9,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { EventsComponent } from './events/events.component';
+import { RequirementsComponent } from './requirements/requirements.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ContactComponent } from './contact/contact.component';
     CarouselComponent,
     AboutusComponent,
     ScheduleComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryComponent,
+    EventsComponent,
+    RequirementsComponent
   ],
   imports: [
     BrowserModule,
