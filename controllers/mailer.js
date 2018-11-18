@@ -1,10 +1,9 @@
 //Require the express package and use express.Router()
 const express = require('express');
 const router = express.Router();
-var request = require('request');
 const nodemailer = require('nodemailer');
 
-// Nodemailer
+// Nodemailer Transporter
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -12,12 +11,7 @@ let transporter = nodemailer.createTransport({
         pass: process.env.email_password
     }
 });
-
-
-
-
 router.get('/', function (req, res) {
-
     const mailOptions = {
         from: process.env.email_user, // sender address
         to: req.query.email, // list of receivers
@@ -31,10 +25,6 @@ router.get('/', function (req, res) {
             console.log(info);
         res.status(200).end()
     });
-
-    console.log(req.query.name);    //Dev purposes only
-    console.log(req.query.email);   //Dev purposes only
-    console.log(req.query.message); //Dev purposes only
 });
 
 module.exports = router;
