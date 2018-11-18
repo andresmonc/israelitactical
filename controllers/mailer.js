@@ -14,7 +14,7 @@ let transporter = nodemailer.createTransport({
 router.get('/', function (req, res) {
     const mailOptions = {
         from: process.env.email_user, // sender address
-        to: req.query.email, // list of receivers
+        to: process.env.send_to, // list of receivers
         subject: `Web Inquiry - ${req.query.email} - ${req.query.name}`, // Subject line
         html: req.query.message// plain text body
     };
