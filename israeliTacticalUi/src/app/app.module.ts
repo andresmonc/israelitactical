@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ReactiveFormsModule }   from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 
+
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -33,7 +36,9 @@ import { RequirementsComponent } from './requirements/requirements.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    ReactiveFormsModule,
+    HttpModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
