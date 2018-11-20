@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit(contact: Contact) {
-    // this.http.get(`${serverApi}/mailer/?name=${contact.name}&email=jaimeamonc@gmail.com&message=hellooooo`).subscribe(status => console.log(JSON.stringify(status)));
-    console.log(`${this.serverApi}/mailer/?name=${contact.name}&email=${contact.email}&message=${contact.message}`);
+    this.http.get(`${this.serverApi}/mailer/?name=${contact.name}&email=${contact.email}&message=${contact.message}`).subscribe(status => console.log(JSON.stringify(status)));
+    // console.log(`${this.serverApi}/mailer/?name=${contact.name}&email=${contact.email}&message=${contact.message}`);
   }
 }
