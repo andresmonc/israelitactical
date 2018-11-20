@@ -1,0 +1,43 @@
+#gallery-banner {
+    /* background-color: blue; */
+    height: 26vh;
+    /* overflow: hidden; */
+    /* position: relative; */
+    text-align: center;
+    background-image: url("https://i.imgur.com/8gWCfzU.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria-title {
+    padding-top: 9vh;
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+}
+
+#scroll {
+    width: 98vw;
+    height: 400px;
+    margin: 80px auto;
+    /* border: 2px solid #000; */
+    overflow: auto;
+    white-space: nowrap;
+    /* box-shadow: 0 0 10px #000; */
+}
+
+.gallery-img {
+    height: 400px;
+    width: 400px;
+    margin: 0px 1px 0px 1px
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+
+@media only screen and (max-device-width: 700px) {
+    #gallery-banner {
+        background-attachment: scroll;
+    }
+}
