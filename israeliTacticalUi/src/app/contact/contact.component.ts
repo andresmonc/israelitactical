@@ -15,18 +15,14 @@ export class ContactComponent implements OnInit {
     email: '',
     message: ''
   }
-baseUrl = environment.baseUrl;
-constructor(private http: HttpClient) { }
+  baseUrl = environment.baseUrl;
+  constructor(private http: HttpClient) { }
   private serverApi = this.baseUrl;
 
-ngOnInit() {
-}
+  ngOnInit() {
+  }
 
-onSubmit(form: NgForm) {
-  var data = form.value;
-  this.http.get(`${this.serverApi}/mailer/?name=${this.contact.name}&email=${this.contact.email}&message=${this.contact.message}`).subscribe(status => console.log(JSON.stringify(status)));
-  // this.http.get(`${this.serverApi}/mailer/?name=${contact.name}&email=${contact.email}&message=${contact.message}`).subscribe(status => console.log(JSON.stringify(status)));
-
-  console.log(`${this.serverApi}/mailer/?name=${this.contact.name}&email=${this.contact.email}&message=${this.contact.message}`);
-}
+  onSubmit(form: NgForm) {
+    this.http.get(`${this.serverApi}/mailer/?name=${this.contact.name}&email=${this.contact.email}&message=${this.contact.message}`).subscribe(status => console.log(JSON.stringify(status)));
+  }
 }
