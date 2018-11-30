@@ -1,6 +1,7 @@
 #gallery-banner {
     /* background-color: blue; */
     height: 20vh;
+    width: 100%;
     /* overflow: hidden; */
     /* position: relative; */
     text-align: center;
@@ -12,9 +13,7 @@
 }
 
 .galeria-title {
-    padding-top: 6vh;
-    font-size: 3em;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
 }
 
