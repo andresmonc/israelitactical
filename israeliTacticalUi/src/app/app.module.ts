@@ -18,6 +18,9 @@ import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { EventsComponent } from './events/events.component';
 import { RequirementsComponent } from './requirements/requirements.component';
+import { FAQComponent } from './faq/faq.component';
+import { FAQButtonComponent } from './faq-button/faq-button.component';
+import { FAQMODALComponent } from './faq-modal/faq-modal.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { RequirementsComponent } from './requirements/requirements.component';
     ContactComponent,
     GalleryComponent,
     EventsComponent,
-    RequirementsComponent
+    RequirementsComponent,
+    FAQComponent,
+    FAQButtonComponent,
+    FAQMODALComponent
   ],
   imports: [
     BrowserModule,
