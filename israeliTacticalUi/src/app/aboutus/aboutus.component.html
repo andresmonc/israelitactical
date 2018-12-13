@@ -8,7 +8,7 @@
     Navy Seals y fuerza delta de Israel.
     Entrenamos desde principiantes hasta profesionales experimentados.
   </p>
-  <div class="w3-row w3-padding-32">
+  <div class="w3-row w3-padding-32" onclick="document.getElementById('inst1modal').style.display='block'">
     <div class="w3-half">
       <h3>Gian Carlo Loffredo</h3>
       <p>Instructor</p>
@@ -19,6 +19,54 @@
       <h3>Tomer Israeli</h3>
       <p>Instructor</p>
       <img src="https://i.imgur.com/HpJ6kII.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%;">
+    </div>
+  </div>
+</div>
+
+
+<!-- Instructor #1 Modal -->
+
+
+<div id="inst1modal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+
+    <div class="w3-row w3-margin">
+      <div class="w3-col s12 m6 l6 w3-margin-bottom">
+        <h5><b>TAC 6- DOS AGENTES</b></h5>
+        <ul>
+          <li>
+            Dos operativos combatiendo simultáneamente.
+          </li>
+          <li>
+            Ejercicios en pareja con fuego real desde un vehículo y pasando a escenario urbano.
+          </li>
+          <li>
+            Discriminación de blancos.
+          </li>
+          <li>
+            Posicionamiento táctico.
+          </li>
+        </ul>
+      </div>
+      <div class="w3-col s12 m6 l6 w3-margin-bottom">
+        <h5><b>TAC 7- UNIDADES ESPECIALES</b></h5>
+        <ul>
+          <li>
+            Programa de entrenamiento para unidades especiales diseñados a la medida,
+            de acuerdo a las necesidades y perfil de la misión específica de la unidad.
+          </li>
+          <li>
+            Escenarios como buses, aviones, instalaciones sensitivas, operaciones
+            aerotransportadas o anfibias.*
+          </li>
+        </ul>
+        <!-- *Con instructores del SHIN-BET, SWAT, DELTA FORCE o SEALS Israeli. -->
+      </div>
+
+    </div>
+    <div class="w3-container">
+      <button class="w3-button w3-red w3-section" onclick="document.getElementById('inst1modal').style.display='none'">Close
+        <i class="fa fa-remove"></i></button>
     </div>
   </div>
 </div>
