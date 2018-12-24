@@ -21,10 +21,9 @@
     width: 98vw;
     height: 400px;
     margin: 80px auto;
-    /* border: 2px solid #000; */
     overflow: auto;
     white-space: nowrap;
-    /* box-shadow: 0 0 10px #000; */
+
 }
 
 .gallery-img {
@@ -43,6 +42,7 @@
 
 #container {
     width: 80vw;
+    height: 400px;
     overflow: hidden;
     margin: 50px auto;
     background: white;
