@@ -8,14 +8,14 @@
     Navy Seals y fuerza delta de Israel.
     Entrenamos desde principiantes hasta profesionales experimentados.
   </p>
-  <div class="w3-row w3-padding-32" onclick="document.getElementById('inst1modal').style.display='block'">
-    <div class="w3-half">
+  <div class="w3-row w3-padding-32" >
+    <div class="w3-half" onclick="document.getElementById('inst1modal').style.display='block'">
       <h3>Gian Carlo Loffredo</h3>
       <p>Instructor</p>
       <img src="https://i.imgur.com/3y7MJi2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%;">
 
     </div>
-    <div class="w3-half">
+    <div class="w3-half" onclick="document.getElementById('inst2modal').style.display='block'">
       <h3>Tomer Israeli</h3>
       <p>Instructor</p>
       <img src="https://i.imgur.com/HpJ6kII.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%;">
@@ -30,42 +30,81 @@
 <div id="inst1modal" class="w3-modal">
   <div class="w3-modal-content w3-animate-top w3-card-4">
 
-    <div class="w3-row w3-margin">
-      <div class="w3-col s12 m6 l6 w3-margin-bottom">
-        <h5><b>TAC 6- DOS AGENTES</b></h5>
-        <ul>
-          <li>
-            Dos operativos combatiendo simultáneamente.
-          </li>
-          <li>
-            Ejercicios en pareja con fuego real desde un vehículo y pasando a escenario urbano.
-          </li>
-          <li>
-            Discriminación de blancos.
-          </li>
-          <li>
-            Posicionamiento táctico.
-          </li>
-        </ul>
+    <div class="w3-row">
+      <div class="w3-col s12 m6 l6">
+        <img src="https://i.imgur.com/3y7MJi2.jpg" style="width:100%;height:auto;">
       </div>
-      <div class="w3-col s12 m6 l6 w3-margin-bottom">
-        <h5><b>TAC 7- UNIDADES ESPECIALES</b></h5>
+      <div class="w3-col s12 m6 l6 w3-margin-bottom" style="padding-left: 10px;">
+        <h5><b>Gian Carlo Loffredo</b></h5>
         <ul>
           <li>
-            Programa de entrenamiento para unidades especiales diseñados a la medida,
-            de acuerdo a las necesidades y perfil de la misión específica de la unidad.
+            Instructor contra terrorismo nivel 5 - Israel Tactical School.
           </li>
           <li>
-            Escenarios como buses, aviones, instalaciones sensitivas, operaciones
-            aerotransportadas o anfibias.*
+            Cuenta con 23 años de experiencia.
+          </li>
+          <li>
+            Cinturón negro (tercer grado) en Kenpo.
+          </li>
+          <li>
+            Instructor de defensa personal.
+          </li>
+          <li>
+            Profesor Universitario
+          </li>
+          <li>
+            Instructor certificado por la NRA en pistola, protección del hogar y prevención del crimen.
+          </li>
+          <li>
+            CEO de Tactical Group
           </li>
         </ul>
-        <!-- *Con instructores del SHIN-BET, SWAT, DELTA FORCE o SEALS Israeli. -->
       </div>
 
     </div>
-    <div class="w3-container">
+    <div class="w3-container" style="position:fixed;">
       <button class="w3-button w3-red w3-section" onclick="document.getElementById('inst1modal').style.display='none'">Close
+        <i class="fa fa-remove"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Instructor #2 Modal -->
+
+
+<div id="inst2modal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+
+    <div class="w3-row">
+      <div class="w3-col s12 m6 l6">
+        <img src="https://i.imgur.com/HpJ6kII.jpg" style="width:100%;height:auto;">
+      </div>
+      <div class="w3-col s12 m6 l6 w3-margin-bottom" style="padding-left: 10px;">
+        <h5><b>TOMER ISRAELI</b></h5>
+        <ul>
+          <li>
+            Cuenta con mas de 23 años de experiencia de
+            campo.
+          </li>
+          <li>
+            Oficial “Shin- Bet “, servicio secreto Israelí.
+          </li>
+          <li>
+            Sirvió en la embajada de Israel en Washington D.C. como agente especial líder de equipo.
+          </li>
+          <li>
+            Campo de acción: antiterrorismo y autodefensa.
+          </li>
+          <li>
+            Ex capitán de las Fuerzas Especiales del Ejército
+            israelí.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="w3-container" style="position:fixed;">
+      <button class="w3-button w3-red w3-section" onclick="document.getElementById('inst2modal').style.display='none'">Close
         <i class="fa fa-remove"></i></button>
     </div>
   </div>
