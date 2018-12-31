@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
     name: '',
     email: '',
     message: ''
-  }
+  };
   baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) { }
   private serverApi = this.baseUrl;
@@ -29,9 +29,11 @@ export class ContactComponent implements OnInit {
     if (this.contact.name.length == 0 || this.contact.email.length == 0 || this.contact.message.length == 0) {
       alert("Please fill out all fields!");
     } else {
-      this.http.get(`${this.serverApi}/mailer/?name=${this.contact.name}&email=${this.contact.email}&message=${this.contact.message}`).subscribe(status => alert(status));
-      this.showForm = false;
-      this.showMessage = true; 
+      this.http.get(`${this.serverApi}/mailer/?name=${this.contact.name}&email=${this.contact.email}&message=${this.contact.message}`).subscribe(response => {
+        this.showForm = false;
+        this.showMessage = true; 
+      });
+
     }
   }
 

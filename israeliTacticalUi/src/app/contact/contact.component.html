@@ -21,7 +21,7 @@
             <h4 class="w3-center" *ngIf="showMessage">Tu mensaje ha sido enviado!</h4>
           </div>
           <input placeholder="Message" class="w3-input w3-border" type="text" name="message" [(ngModel)]="contact.message" *ngIf="showForm">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          <button class="w3-button w3-black w3-section w3-right" type="submit" *ngIf="showForm">SEND</button>
         </form>
       </div>
     </div>
