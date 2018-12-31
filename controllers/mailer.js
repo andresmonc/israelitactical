@@ -19,11 +19,14 @@ router.get('/', function (req, res) {
         html: req.query.message// plain text body
     };
     transporter.sendMail(mailOptions, function (err, info) {
-        if (err)
-            console.log(err)
-        else
+        if (err) {
+            res.statusMessage = "Gmail Authentication error https://accounts.google.com/b/0/DisplayUnlockCaptcha";
+            res.status(500).send(err);
+        }
+        else {
             console.log(info);
-        res.status(200).send(info);
+            res.status(200).send(info);
+        }
     });
 });
 
