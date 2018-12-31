@@ -23,7 +23,7 @@ router.get('/', function (req, res) {
             console.log(err)
         else
             console.log(info);
-        res.status(200).end()
+        res.status(200).send(info);
     });
 });
 
