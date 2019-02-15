@@ -3,11 +3,16 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 const app = express();
 const port = process.env.PORT || 3000;
 // Controllers
 const mailer = require('./controllers/mailer')
 
+
+
+// Compress the page
+app.use(compression());
 //middleware for cors
 app.use(cors());
 //middleware for bodyparsing using urlencoding
