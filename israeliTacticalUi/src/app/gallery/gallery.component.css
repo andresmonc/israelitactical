@@ -4,8 +4,6 @@
     width: 100%;
     /* overflow: hidden; */
     /* position: relative; */
-
-    
     text-align: center;
     background-image: url(https://drive.google.com/uc?export=view&id=17h8FuXexjtEoeXjddDCp9wv4yNg-SCWB);
     background-attachment: fixed;
@@ -25,7 +23,6 @@
     margin: 80px auto;
     overflow: auto;
     white-space: nowrap;
-
 }
 
 .gallery-img {
@@ -64,6 +61,7 @@
     -ms-transition: all 0.1s ease;
     transition: all 0.1s ease;
 }
+
 /* 
 .photobanner img:hover {
     -webkit-transform: scale(1.1);
