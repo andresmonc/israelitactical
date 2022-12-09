@@ -7,7 +7,7 @@
     "body-parser": "^1.18.3",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "nodemailer": "^6.4.16",
     "path": "^0.12.7",
     "request": "^2.88.0"
