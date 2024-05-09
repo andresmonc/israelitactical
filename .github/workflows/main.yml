@@ -23,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: cd ./israeliTacticalUi && npm run build
       - name: Deploy
         uses: docker://w9jds/firebase-action:v11.9.0
         with:
