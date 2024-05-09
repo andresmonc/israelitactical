@@ -14,16 +14,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest # runs a test on Ubuntu, Windows and macOS
+    runs-on: ubuntu-20.04
+    container:
+        image: python:2.7.18-buster
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Initialize Node
         uses: actions/setup-node@master
-      - name: Set up Python 2
-        uses: actions/setup-python@v2
-        with:
-          python-version: '2.7'
       - name: Install Dependencies
         run: cd ./israeliTacticalUi && npm install
       - name: Build
