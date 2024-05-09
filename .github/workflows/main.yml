@@ -25,7 +25,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        uses: docker://w9jds/firebase-action:v1.0
+        uses: docker://w9jds/firebase-action:v11.9.0
         with:
           args: deploy --only hosting
         env:
