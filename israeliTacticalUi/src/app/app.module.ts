@@ -5,7 +5,6 @@ import { ReactiveFormsModule }   from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpModule } from '@angular/http';
 
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -43,7 +42,6 @@ import { FAQMODALComponent } from './faq-modal/faq-modal.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule, 
     HttpClientModule
   ],
   providers: [],
