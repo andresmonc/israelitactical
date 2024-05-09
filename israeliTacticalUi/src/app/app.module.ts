@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { ReactiveFormsModule }   from '@angular/forms';
-import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -15,7 +13,6 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { EventsComponent } from './events/events.component';
 import { FAQComponent } from './faq/faq.component';
 import { FAQButtonComponent } from './faq-button/faq-button.component';
 import { FAQMODALComponent } from './faq-modal/faq-modal.component';
@@ -30,7 +27,6 @@ import { FAQMODALComponent } from './faq-modal/faq-modal.component';
     ScheduleComponent,
     ContactComponent,
     GalleryComponent,
-    EventsComponent,
     FAQComponent,
     FAQButtonComponent,
     FAQMODALComponent
@@ -38,8 +34,6 @@ import { FAQMODALComponent } from './faq-modal/faq-modal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
