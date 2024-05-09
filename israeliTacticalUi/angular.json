@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "israeliTacticalUi"
+  "defaultProject": "israeliTacticalUi",
+  "cli": {
+    "analytics": false
+  }
 }
