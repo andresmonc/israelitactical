@@ -22,6 +22,10 @@ jobs:
         uses: actions/checkout@master
       - name: Initialize Node
         uses: actions/setup-node@master
+      - name: Set up Python 2
+        uses: actions/setup-python@v2
+        with:
+          python-version: '2.7.9'
       - name: Install Dependencies
         run: cd ./israeliTacticalUi && npm install
       - name: Build
