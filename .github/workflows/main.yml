@@ -21,7 +21,7 @@ jobs:
       - name: Initialize Node
         uses: actions/setup-node@master
       - name: Install Dependencies
-        run: npm install
+        run: cd ./israeliTacticalUi && npm install
       - name: Build
         run: cd ./israeliTacticalUi && npm run build
       - name: Deploy
