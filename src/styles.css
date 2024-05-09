@@ -1,9 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .its-blue {
-    background-color: #1e6eb8; 
+    background-color: #1e6eb8;
     color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
