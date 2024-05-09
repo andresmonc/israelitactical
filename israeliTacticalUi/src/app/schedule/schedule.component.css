@@ -2,7 +2,8 @@ li {
     list-style-type: square;
 }
 
-p,li {
+p,
+li {
     text-align: justify;
     hyphens: auto;
 }
@@ -15,17 +16,20 @@ ul {
 }
 
 .product {
-    min-height: 28vh;
+    max-height: 30vh;
+    min-height: 30vh;
 }
 
 .product-2 {
-    min-height: 28vh;
+    max-height: 30vh;
+    min-height: 30vh;
 }
 
 @media only screen and (max-width: 993px) {
     .product {
         min-height: 41vh;
     }
+
     .product-2 {
         min-height: 41vh;
     }
@@ -35,6 +39,7 @@ ul {
     .product {
         min-height: 45vh;
     }
+
     .product-2 {
         min-height: 0vh;
     }
@@ -44,6 +49,7 @@ ul {
     .product {
         min-height: 47vh;
     }
+
     .product-2 {
         min-height: 0vh;
     }
@@ -53,6 +59,7 @@ ul {
     .product {
         min-height: 50vh;
     }
+
     .product-2 {
         min-height: 0vh;
     }
@@ -62,6 +69,7 @@ ul {
     .product {
         min-height: 0vh;
     }
+
     .product-2 {
         min-height: 0vh;
     }
